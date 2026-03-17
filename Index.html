@@ -1,0 +1,199 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú de Animales</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+        }
+
+        nav {
+            background: linear-gradient(90deg, #2c3e50, #1a252f);
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav > ul > li {
+            position: relative;
+            flex: 1;
+            text-align: center;
+        }
+
+        nav a {
+            display: block;
+            padding: 18px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav > ul > li:hover {
+            background: #34495e;
+        }
+
+        nav a:hover {
+            color: #00eaff;
+            transform: scale(1.05);
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background: white;
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+            overflow: hidden;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .dropdown li a {
+            color: #333;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .dropdown li a:hover {
+            background: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        nav > ul > li:hover .dropdown {
+            display: block;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+
+       
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 30px;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 220px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Explorador de Animales</h1>
+
+<nav>
+    <ul>
+        <li>
+            <a href="#">Peces</a>
+            <ul class="dropdown">
+                <li><a href="Orca.html">Orca</a></li>
+                <li><a href="Medusa.html">Medusa</a></li>
+                <li><a href="Ballena.html">Ballena</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Mamíferos</a>
+            <ul class="dropdown">
+                <li><a href="Puma.html">Puma</a></li>
+                <li><a href="Jaguar.html">Jaguar</a></li>
+                <li><a href="Capibara.html">Capibara</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Anfibios</a>
+            <ul class="dropdown">
+                <li><a href="Ajolote.html">Ajolote</a></li>
+                <li><a href="Sapo.html">Sapo</a></li>
+                <li><a href="Renacuajo.html">Renacuajo</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Aves</a>
+            <ul class="dropdown">
+                <li><a href="Tucan.html">Tucan</a></li>
+                <li><a href="Paloma.html">Paloma</a></li>
+                <li><a href="Flamingo.html">Flamingo</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Reptiles</a>
+            <ul class="dropdown">
+                <li><a href="Camaleon.html">Camaleon</a></li>
+                <li><a href="Dragon.html">Dragón de Komodo</a></li>
+                <li><a href="Serpiente.html">Serpiente de Cascabel</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Abejas</a>
+            <ul class="dropdown">
+                <li><a href="Abejas.html">Abejas Meliponas</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+<div class="cards">
+
+    <div class="card">
+        <h3>Ajolote</h3>
+        <p>Puede regenerar partes de su cuerpo como patas, cola e incluso órganos.</p>
+    </div>
+
+    <div class="card">
+        <h3>Capibara</h3>
+        <p>Es el roedor más grande del mundo y es muy sociable.</p>
+    </div>
+
+    <div class="card">
+        <h3>Tucán</h3>
+        <p>Su pico es grande pero muy ligero y le ayuda a regular su temperatura.</p>
+    </div>
+
+    <div class="card">
+        <h3>Serpiente de cascabel</h3>
+        <p>Utiliza su cascabel para advertir antes de atacar.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
